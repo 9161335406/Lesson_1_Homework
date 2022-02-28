@@ -15,7 +15,7 @@ namespace Lesson_1_Homework
             string name = Console.ReadLine();
             DateTime date = DateTime.Now;
 
-            Console.WriteLine($"Hello, {name}. Today is {date.ToShortDateString()}");
+            Console.WriteLine($"Hello, {name}. Today is {date.ToShortDateString()}");//6
             Console.ReadKey();
         }
     }
