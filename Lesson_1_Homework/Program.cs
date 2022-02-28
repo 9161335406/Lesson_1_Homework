@@ -12,10 +12,10 @@ namespace Lesson_1_Homework
         {
             Console.WriteLine("Enter your name:");
 
-            string name = Console.ReadLine();
-            DateTime date = DateTime.Now;
+            string name = Console.ReadLine(); //объявляем переменную и присваеваем ей значение, введенное с консоли
+            DateTime date = DateTime.Now; //создаем переменную типа DateTime
 
-            Console.WriteLine($"Hello, {name}. Today is {date.ToShortDateString()}");
+            Console.WriteLine($"Hello, {name}. Today is {date.ToShortDateString()}");//вывод данных нужного формата
             Console.ReadKey();
         }
     }
