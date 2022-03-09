@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C8CEC433-17DC-4407-B464-E30C37D7E41E}</ProjectGuid>
+    <ProjectGuid>{59CC5C13-B1F0-43B4-872C-F3306DB13D00}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lesson_2_HomeWork5</RootNamespace>
-    <AssemblyName>Lesson_2_HomeWork5</AssemblyName>
+    <RootNamespace>lessonHomework_3_1</RootNamespace>
+    <AssemblyName>lessonHomework_3_1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lesson2_5.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Seasons.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
