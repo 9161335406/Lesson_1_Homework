@@ -7,16 +7,23 @@ namespace lessonHomework_3_1
         static void Main(string[] args)
         {
             int[,] array = new int[5, 5];
-             for (int i = 0; i < 5; i++) {
-                for (j = 1; j < 5; j++)
+            array[0, 1] = 1;
+            array[1, 2] = 1;
+            array[2, 3] = 1;
+            array[3, 4] = 1;
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 1; j < 5; j++)
                 {
                     Console.Write(array[i, j] + "  ");
                 }
                 Console.WriteLine();
-            
 
-            
 
+
+
+            }
+            Console.ReadKey();
         }
     }
 
