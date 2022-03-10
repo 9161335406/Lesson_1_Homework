@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lessonHomework_3_1
 {
@@ -10,20 +6,19 @@ namespace lessonHomework_3_1
     {
         static void Main(string[] args)
         {
-         int[,] a = new int[10, 10]
-         for (int i = 0; i < 10; i++)
-         for (int j = 0; j < 10; j++)
-         a[i, j] = (i + j) % 10 + 1;
-         for (int i = 0; i < 10; i++)
+            int[,] matrixfor = new int[5, 5];
+            matrixfor[2, 2] = 1;
+            for (int i = 0; i < matrixfor.GetLenght(0); i++)
             {
-                for (int j = 0; j < 10; j++)
-                    Console.Write(a[i, j] + " ");
-                Console.WriteLine();
+            for (int j = 0; j < matrixfor.GetLenght(1); j++)
+
+                    Console.Write($"{matrixfor[i, j]} ");
+
             }
-            Console.ReadLine();
+
         }
     }
 
 }
-    
+
 
