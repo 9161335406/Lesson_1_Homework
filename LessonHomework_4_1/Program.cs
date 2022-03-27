@@ -26,7 +26,7 @@ namespace LessonHomework_4_1
 
                 fullName[i] = GetFullName(lastName, firstName, patronymic);
 
-                Console.Clear(); на косоль 
+                Console.Clear(); 
             }
 
             Console.WriteLine();
