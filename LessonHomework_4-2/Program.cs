@@ -19,9 +19,9 @@ namespace LessonHomework_4_2
 
             for (int i = 0; i < numbArray.Length; i++)
             {
-             Console.Write($"\nВведите элемент массива {i}:\t ");
+                Console.Write($"\nВведите элемент массива {i}:\t ");
 
-             numbArray[i] = int.Parse(Console.ReadLine());
+                numbArray[i] = int.Parse(Console.ReadLine());
             }
             Console.WriteLine();
 
@@ -33,19 +33,23 @@ namespace LessonHomework_4_2
 
                 Console.Write(numbArray[i]);
             }
+            Console.WriteLine();
 
             int Sum = 0;
 
             for (int i = 0; i < numbArray.Length; i++)
             {
-             
-             Sum += numbArray[i];
-            
-            }
-             Console.Write(Sum);
 
-             Console.ReadKey();
+                Sum += numbArray[i];
+
+            }
+            Console.WriteLine("Сумма элементов: ");
+
+            Console.Write(Sum);
+
+            Console.ReadKey();
         }
 
     }
 }
+        
