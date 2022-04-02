@@ -13,11 +13,11 @@ namespace LessonHomework_4_2
 
             Console.Write("Введите кол-во элементов массива:\t");
 
-            int elementsCount = int.Parse(Console.ReadLine());
+            int elementsCount = int.Parse(Console.ReadLine()); //Запрос значения от пользователя.
 
             int[] numbArray = new int[elementsCount];
 
-            for (int i = 0; i < numbArray.Length; i++)
+            for (int i = 0; i < numbArray.Length; i++) //Цикл ввода элементов с клавиатуры.
             {
                 Console.Write($"\nВведите элемент массива {i}:\t ");
 
@@ -27,7 +27,7 @@ namespace LessonHomework_4_2
 
             Console.WriteLine("Вывод элементов массива:");
 
-            for (int i = 0; i < numbArray.Length; i++)
+            for (int i = 0; i < numbArray.Length; i++) //Цикл вывода элементов.
             {
                 Console.Write(" ");
 
@@ -45,7 +45,7 @@ namespace LessonHomework_4_2
             }
             Console.WriteLine("Сумма элементов: ");
 
-            Console.Write(Sum);
+            Console.Write(Sum); //Вывод суммы значений.
 
             Console.ReadKey();
         }
