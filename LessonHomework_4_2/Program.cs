@@ -8,14 +8,6 @@ namespace LessonHomework_4_2
 {
     class Program
     {
-        static int Sum(int[] numbArray)
-        {
-            int result = numbArray.Sum();
-
-            return result;
-        }
-
-
         static void Main(string[] args)
         {
 
@@ -37,19 +29,23 @@ namespace LessonHomework_4_2
 
             for (int i = 0; i < numbArray.Length; i++)
             {
-                               
                 Console.Write(" ");
 
                 Console.Write(numbArray[i]);
+            }
+
+            int Sum = 0;
+
+            for (int i = 0; i < numbArray.Length; i++)
+            {
+             
+             Sum = Sum += numbArray[i];
             
             }
 
-            int c = numbArray.Sum();
+             Console.Write(Sum);
 
-            Console.Write(c);
-
-
-                Console.ReadKey();
+             Console.ReadKey();
         }
 
     }
