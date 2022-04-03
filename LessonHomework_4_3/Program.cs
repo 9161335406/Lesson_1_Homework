@@ -9,13 +9,13 @@ namespace LessonHomework_4_3
     class Seasons
     {
         enum season { Winter, Spring, Summer, Autumn };
-        static season OfMonth(int n)
+        static season OfMonth(int n) //Создаём метод принимающий значение о1 до 12.
         {
                 if (n <= 0 || n > 12)
 
                 Console.WriteLine("Ошибка: введите число от 1 до 12");
 
-                switch (n % 12 / 3)
+                switch (n % 12 / 3) 
                 {
                     case 0:
                         return season.Winter;
@@ -27,9 +27,9 @@ namespace LessonHomework_4_3
                 }
             
         }
-        static string Season(season s)
+        static string Season(season s) // Реализация метода возвращающего название времени года.
         {
-            switch (s)
+            switch (s)  
             {
                 case season.Winter:
                     return "Зима";
@@ -42,12 +42,13 @@ namespace LessonHomework_4_3
                 default: return "";
             }     
         }
-        static void Main(string[]vs)
+        static void Main(string[]vs)//Реализация метода принимающего на вход значение из перечисления.
         {
             do
             {
                 Console.WriteLine("Введите номер месяца: ");
                 Console.WriteLine(Season(OfMonth(Convert.ToInt32(Console.ReadLine()))));
+                
             }
             while (true);
         }
