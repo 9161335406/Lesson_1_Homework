@@ -12,10 +12,11 @@ namespace Homework__5_1
         static void Main(string[] args)
         {
             string filename = "file_txt;";
+            string file = "startup.txt";
             string time = DateTime.Now.ToLongTimeString();//Текущее время
-            File.WriteAllText(filename,"str");
-            File.AppendAllText(filename, "time");
-            Console.WriteLine($"{filename}, {time}");
+            File.WriteAllText(filename,"str");//Запись строки в файл
+            File.AppendAllText(file, "time");
+            Console.WriteLine($"{file}, {time}");//Вывод файла и текущего времени
             Console.ReadKey();
         } 
        
