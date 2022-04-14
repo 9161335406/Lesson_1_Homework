@@ -11,39 +11,33 @@ namespace LessonHomework_6_1
     {
         static void Main(string[] args)
         {
-            Process processes = new Process();
-            Process[] processes = Process.GetProcessesByName("taskmgr");
-            
-            Console.WriteLine(processes);
-            //Process[] processes = Process.GetProcesses();
-            //for (int i = 0; i < processes.Length; i++)
-            //{
-            //    Process process1 = processes[i];
-            //    Console.WriteLine($"ID: {process1.Id}  Name: {process1.ProcessName}");
-            //}
-            //Process[] processes = Process.GetProcessesById("taskmgr");
+            //Вызываем массив процессов
 
-            Console.ReadKey(true);
+            foreach (Process process in Process.GetProcesses())
+            {
+              Console.WriteLine($"ID: {process.Id}  Name: {process.ProcessName}");//Имена и id процессов.
+            }
+                Console.WriteLine();
 
+            string name = string.Empty;
+
+            while (name != "q") //Реализуем в цикл
+            {
+                Console.WriteLine("Укажите имя или id процесса(нажмите q для выхода): ");
+
+                name = Console.ReadLine();
+
+                if (int.TryParse(name, out int id))
+                {
+                    process1.KillId(id);
+                }
+                else
+                {
+                    process1.KillName(name);
+                }
+            }
         }
     }
 
-    internal class tasklist
-    {
-        Process processes = new Process();
-        Process[] processes = Process.GetProcessesByName("taskmgr");
+}      
 
-    }
-}
- 
-
-
-
-
-
-
-
-
-
-//Process.StartInfo.FileName ={ @"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\System Tools\taskmgr" };
-           
