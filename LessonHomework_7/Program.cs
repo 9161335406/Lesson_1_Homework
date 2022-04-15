@@ -17,8 +17,9 @@ namespace LessonHomework_7
             {
                 Console.WriteLine("Welcome!");
             }
-
+   
             Console.ReadKey(true);
         }
+ 
     }
 }
