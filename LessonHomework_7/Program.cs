@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace LessonHomework_7
 {
     class Program
-    {
+    {   //Исходный код.
         static void Main(string[] args)
         {
             string secret = "some secret password";
@@ -20,6 +20,21 @@ namespace LessonHomework_7
    
             Console.ReadKey(true);
         }
- 
-    }
+  
+        
+        
+        //Код с изменениями условий.
+        private static void Main(string[] args)
+        { 
+           string str = "some secret password";
+           Console.WriteLine("Введите пароль:");
+           if (!(Console.ReadLine() == str))
+           Console.WriteLine("Welcome!");
+           Console.ReadKey(true);
+        }
+    
+    }    
 }
+     //Код с изменениями условий.     
+    
+
