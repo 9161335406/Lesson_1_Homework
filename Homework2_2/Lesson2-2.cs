@@ -4,7 +4,6 @@ namespace Homework2_2
 {
     class EnumDemo
     {
-
         enum mesyac { Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь };
         static void Main()
         { 
@@ -15,13 +14,10 @@ namespace Homework2_2
             else
                 Console.WriteLine("Месяц под номером {0}: {1}", n, (mesyac)(n - 1));
             Console.ReadKey();
-
         }
-            
     }
-             
 }
 
         
-    
+   
 
