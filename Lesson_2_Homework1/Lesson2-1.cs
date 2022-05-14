@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson2_1 { 
-
+namespace Lesson2_1
+{ 
     internal class Program
     {
-    static void Main(string[] args)
-    {
+       static void Main(string[] args)
+       {
         double firstValue, secondValue, thirdValue; //Расчёт среднесуточной температуры
             Console.WriteLine("Введите 1 значение");
             firstValue = double.Parse(Console.ReadLine());
@@ -21,6 +21,6 @@ namespace Lesson2_1 {
             Console.WriteLine("Среднесуточная температура = " + result);
        
             Console.ReadKey();
-        }
+       } 
     }
 }
