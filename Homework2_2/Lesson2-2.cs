@@ -16,13 +16,9 @@ namespace Homework2_2
                 Console.WriteLine("Месяц под номером {0}: {1}", n, (mesyac)(n - 1));
             Console.ReadKey();
 
-
-
-
-
         }
             
-     }
+    }
              
 }
 
