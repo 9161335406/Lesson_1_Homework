@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson2_1 { 
-
+namespace Lesson2_1
+{ 
     internal class Program
     {
     static void Main(string[] args)
